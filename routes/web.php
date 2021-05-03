@@ -1,5 +1,5 @@
 <?php
-
+//use App\Http\Controllers\PhotoController
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,11 +12,21 @@
 */
 
 //Route::get('/', function () {
-   // return view('welcome');
+    //return [1,2 ,3];
 //});
-Route::redirect('/here', '/there');
+//Route::redirect('/here', '/there');
+
+//Route::get('user/profile', 'TesteController@show');
+
+//Route::resource('photos', PhotoController::class);
 
 
-//Route::get('/here', function (){
-  //  return view('welcome');
-//});
+Route::get('/contacto', function (){
+    return view('contacto');
+});
+Route::get('/', function (){
+    return view('project');
+});
+Route::get('/about', function (){
+    return view('about');
+});
